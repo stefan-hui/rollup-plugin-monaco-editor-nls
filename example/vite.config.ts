@@ -3,9 +3,10 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import monacoEditorNlsPlugin, {
     Languages,
+    esbuildPluginMonacoEditorNls,
 } from "rollup-plugin-monaco-editor-nls";
 
-const prefix = `monaco-editor/esm/vs`;
+const is_dev = process.env.NODE_ENV === "development";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,16 +17,23 @@ export default defineConfig({
     },
     build: {
         sourcemap: true,
+        rollupOptions: {
+            manualChunks: (id) => {
+                if (id.includes("monaco-editor")) {
+                    return "monaco-editor";
+                }
+            },
+        },
     },
     optimizeDeps: {
-        include: [
-            `${prefix}/language/typescript/ts.worker`,
-            `${prefix}/editor/editor.worker`,
-        ],
-        exclude: ["monaco-editor/esm/vs"],
+        esbuildOptions: {
+            plugins: [
+                esbuildPluginMonacoEditorNls({ locale: Languages.zh_hans }),
+            ],
+        },
     },
     plugins: [
-        monacoEditorNlsPlugin({ locale: Languages.zh_hans }),
+        !is_dev && monacoEditorNlsPlugin({ locale: Languages.zh_hans }),
         reactRefresh(),
     ],
 });
