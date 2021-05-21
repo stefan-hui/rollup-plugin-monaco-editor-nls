@@ -1,7 +1,15 @@
 {
     "name": "rollup-plugin-monaco-editor-nls",
     "version": "1.0.3",
-    "keyword": "rollup vite plugin monaco editor nls localization localize",
+    "keyword": [
+        "localization",
+        "localize",
+        "rollup plugin",
+        "monaco",
+        "monaco editor",
+        "vite plugin",
+        "nls"
+    ],
     "license": "MIT",
     "repository": "https://github.com/stefan-hui/rollup-plugin-monaco-editor-nls",
     "files": [
