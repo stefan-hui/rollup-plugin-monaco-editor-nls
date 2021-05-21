@@ -1,13 +1,13 @@
 {
     "name": "rollup-plugin-monaco-editor-nls",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keyword": [
         "localization",
         "localize",
         "rollup plugin",
+        "vite plugin",
         "monaco",
         "monaco editor",
-        "vite plugin",
         "nls"
     ],
     "license": "MIT",
