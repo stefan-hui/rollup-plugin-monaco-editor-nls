@@ -66,7 +66,7 @@ export default function (
                     CURRENT_LOCALE_DATA_JSON
                 );
 
-                if (source === transform_source) {
+                if (source !== transform_source) {
                     return {
                         code: transform_source,
                         map: new MagicString(transform_source).generateMap({

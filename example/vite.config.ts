@@ -17,13 +17,6 @@ export default defineConfig({
     },
     build: {
         sourcemap: true,
-        rollupOptions: {
-            manualChunks: (id) => {
-                if (id.includes("monaco-editor")) {
-                    return "monaco-editor";
-                }
-            },
-        },
     },
     optimizeDeps: {
         esbuildOptions: {

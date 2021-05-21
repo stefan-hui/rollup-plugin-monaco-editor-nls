@@ -8,7 +8,7 @@ specifiers:
   monaco-editor: ^0.24.0
   react: ^17.0.0
   react-dom: ^17.0.0
-  rollup-plugin-monaco-editor-nls: ^1.0.3
+  rollup-plugin-monaco-editor-nls: ^1.0.5
   typescript: ^4.1.2
   vite: 2.3.3
 
@@ -16,7 +16,7 @@ dependencies:
   monaco-editor: 0.24.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
-  rollup-plugin-monaco-editor-nls: 1.0.3
+  rollup-plugin-monaco-editor-nls: 1.0.5
 
 devDependencies:
   '@types/react': 17.0.3
@@ -616,8 +616,8 @@ packages:
       path-parse: 1.0.6
     dev: true
 
-  /rollup-plugin-monaco-editor-nls/1.0.3:
-    resolution: {integrity: sha512-rcIyMeAlzctYODK2rvz+lfo9mbPiliEQPlt3W/Ldy+39FS0VID2sNMqwjg2+bAY2k0zHLcHdHd+dKDlwRxA56g==}
+  /rollup-plugin-monaco-editor-nls/1.0.5:
+    resolution: {integrity: sha512-A8yidDRniQBlBOs3mnB0bEajre9Kg6V/FFM4mKJtQEUFG9RYnMag33NwOJ8BrtGJ509D2CAVDqhjcfCdgb2Ikg==}
     requiresBuild: true
     dependencies:
       magic-string: 0.25.7
