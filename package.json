@@ -18,8 +18,7 @@
     "main": "dist/index.js",
     "scripts": {
         "build": "rimraf dist && tsc -p . && cp -rf ./src/locale dist/locale",
-        "pub": "npm publish",
-        "preinstall": "npx -y only-allow pnpm"
+        "pub": "npm publish"
     },
     "devDependencies": {
         "@types/node": "^15.3.0",
