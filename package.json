@@ -1,6 +1,6 @@
 {
     "name": "rollup-plugin-monaco-editor-nls",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "keyword": [
         "localization",
         "localize",
